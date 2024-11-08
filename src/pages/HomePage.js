@@ -1,6 +1,8 @@
 // src/pages/HomePage.js
 import React from 'react';
-import { Container, Grid, Typography, Card, CardContent } from '@mui/material';
+import { Container, Typography, Card, CardContent } from '@mui/material';
+import Grid from '@mui/material/Grid';
+
 
 const HomePage = () => {
   return (
