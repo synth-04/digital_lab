@@ -1,7 +1,7 @@
 // src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-// import Navbar from './components/Navbar/Navbar';
+import Navbar from './components/Navbar/Navbar';
 //import Footer from './components/Footer/Footer';
 import HomePage from './pages/HomePage';
 //import Programming from './pages/Tutorials/Programming';
@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       <div>
-        
+      <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
 
@@ -25,7 +25,7 @@ function App() {
 }
 
 export default App;
-// <Navbar />
+// 
 //           // <Route path="/tutorials/programming" element={<Programming />} />
           // <Route path="/tutorials/database" element={<Database />} />
           // <Footer />

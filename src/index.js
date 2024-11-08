@@ -5,7 +5,6 @@ import App from './App';
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import theme from './theme'; // Importa il tema creato
-
 import '@fontsource/roboto'; // Importa il font Roboto (assicurati che sia installato)
 
 ReactDOM.render(

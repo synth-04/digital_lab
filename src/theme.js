@@ -21,7 +21,16 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: 'Roboto, Arial, sans-serif', // Imposta il font come Roboto
+    h4: {
+        fontSize: '3rem', // Cambia dimensione dell'intestazione h4
+      },
+    h5: {
+        fontSize: '2rem', // Cambia dimensione dell'intestazione h5
+      },
+    body1: {
+        fontSize: '1.25rem', // Cambia dimensione del testo principale
   },
+},
 });
 
 export default theme;
