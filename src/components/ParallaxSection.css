@@ -1,6 +1,6 @@
 /* src/components/ParallaxSection.css */
 .parallax {
-    background-image: url('/path/to/your/image.jpg'); /* Sostituisci con il percorso della tua immagine */
+     /* Sostituisci con il percorso della tua immagine */
     height: 500px;
     background-attachment: fixed;
     background-position: center;

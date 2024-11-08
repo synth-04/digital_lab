@@ -9,7 +9,7 @@ const HomePage = () => {
   return (
     <Container style={{ padding: '20px' }}>
         <div>
-        <ParallaxSection />
+        <ParallaxSection  bgImage="/images/immaginecomputer.webp" title="Benvenuto nel Digital Lab" />
         <div style={{ padding: '5px' }}>
         </div>
       <Box component="main" sx={{ my: 4 }}>
