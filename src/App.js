@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 //import Footer from './components/Footer/Footer';
 import HomePage from './pages/HomePage';
-//import Programming from './pages/Tutorials/Programming';
-// import Database from './pages/Tutorials/Database';
+import MainCorsi from './pages/corsi/MainCorsi';
+// import Database from './pages/Corsi/Database';
 // Importa altre pagine di tutorial...
 
 function App() {
@@ -15,6 +15,7 @@ function App() {
       <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/corsi" element={<MainCorsi />} />
 
           {/* Aggiungi altre rotte per ogni pagina di tutorial */}
         </Routes>
