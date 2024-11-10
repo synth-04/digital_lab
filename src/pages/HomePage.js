@@ -8,7 +8,7 @@ import {Link} from 'react-router-dom';
 
 const corsi = [
   { title: 'Architettura del Computer', description: 'Componenti di base e funzionamento di un elaboratore', link: '/corsi/architettura-del-computer', image: '/images/architettura.jpg' },
-  { title: 'Programmazione', description: 'Introduzione ai concetti di programmazione e linguaggi di base.', link: 'corsi/programmazione', image: '/images/programmazione.jpg' },
+  { title: 'Programmazione', description: 'Introduzione ai concetti di programmazione e linguaggi di base.', link: '/corsi/programmazione', image: '/images/programmazione.jpg' },
   { title: 'Web Development', description: 'Creazione di siti web moderni utilizzando HTML, CSS e JavaScript.', link: '/corsi/web-development', image: '/images/webdev.jpg'},
   { title: 'Database', description: 'Fondamenti di progettazione e gestione di database relazionali.', link: '/corsi/database', image: '/images/database.png'},
   { title: 'Sicurezza Informatica', description: 'Comprendere le basi della sicurezza informatica e delle reti.', link: '/corsi/sicurezza-informatica', image: '/images/cybersecurity.jpg' },
@@ -17,7 +17,7 @@ const corsi = [
 const HomePage = () => {
   return (
     <Container maxWidth="lg">
-        <ParallaxSection  bgImage="/images/immaginecomputer.jpg" title="Benvenuto nel Digital Lab" />
+        <ParallaxSection  bgImage="/images/computer2.jpg" title="Benvenuto nel Digital Lab" />
         <div style={{ padding: '5px' }}>
         </div>
     
@@ -45,7 +45,8 @@ const HomePage = () => {
             </Typography>
             <Typography variant="h6" color="text.primary" gutterBottom>
             Il <strong>Digital Lab</strong> è un progetto creato per ampliare le conoscenze informatiche degli studenti delle scuole secondarie.
-            Troverai numerose risorse, dai programmi di Informatica scolastici fino a progetti ideati appositamente per gli studenti. Sono risorse totalmente <strong>gratuite</strong>, quindi non sprecarle!
+            Troverai numerose risorse, dai programmi di Informatica scolastici fino a progetti ideati appositamente per gli studenti. 
+            Sono risorse totalmente <strong>gratuite</strong>, quindi non sprecarle!
             </Typography>
             <Button variant="contained" color="primary" sx={{ mt: 2, mr: 2 }}>
             Vai ai corsi
@@ -55,7 +56,7 @@ const HomePage = () => {
             <motion.img
               src="/images/iconapc.png"
               alt="Hero"
-              style={{ width: '100%', height: 'auto', borderRadius: 8 }}
+              style={{ width: '60%', height: 'auto', borderRadius: 8 }}
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1, delay: 0.3 }}
@@ -70,7 +71,7 @@ const HomePage = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1.2, delay: 0.5 }}
       >
-        <Box sx={{ mt: 6 }}>
+        <Box sx={{ mt: 6, padding: 4}}>
           <Typography variant="h5" gutterBottom align="center">
             I Corsi
           </Typography>

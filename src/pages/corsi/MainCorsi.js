@@ -4,10 +4,11 @@ import { Container, Card, CardContent, CardMedia, Typography, Button, Box } from
 import Grid from '@mui/material/Grid2';
 import {Link} from 'react-router-dom';
 import { motion } from 'framer-motion';
+import ParallaxSection from '../../components/ParallaxSection';
 
 const corsi = [
   { title: 'Architettura del Computer', description: 'Componenti di base e funzionamento di un elaboratore', link: '/corsi/architettura-del-computer', image: '/images/architettura.jpg' },
-  { title: 'Programmazione', description: 'Introduzione ai concetti di programmazione e linguaggi di base.', link: 'corsi/programmazione', image: '/images/programmazione.jpg' },
+  { title: 'Programmazione', description: 'Introduzione ai concetti di programmazione e linguaggi di base.', link: '/corsi/programmazione', image: '/images/programmazione.jpg' },
   { title: 'Web Development', description: 'Creazione di siti web moderni utilizzando HTML, CSS e JavaScript.', link: '/corsi/web-development', image: '/images/webdev.jpg'},
   { title: 'Database', description: 'Fondamenti di progettazione e gestione di database relazionali.', link: '/corsi/database', image: '/images/database.png'},
   { title: 'Sicurezza Informatica', description: 'Comprendere le basi della sicurezza informatica e delle reti.', link: '/corsi/sicurezza-informatica', image: '/images/cybersecurity.jpg' },
@@ -16,16 +17,16 @@ const corsi = [
 const MainCorsi = () => {
   return (
     <Container maxWidth="lg" sx={{ mt: 4 }}>
+      <ParallaxSection  bgImage="/images/computercorsi.jpg" title="Corsi" />
+        <div style={{ padding: '5px' }}>
+        </div>
       {/* Courses Section*/}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.2, delay: 0.5 }}
       >
-        <Box sx={{ mt: 6 }}>
-          <Typography variant="h5" gutterBottom align="center">
-            I Corsi
-          </Typography>
+        <Box sx={{ mt: 6, padding: 8 }}>
           <Grid container spacing={4} justifyContent="center">
             {corsi.map((corso, index) => (
               <Grid item xs={12} sm={6} md={4} key={index}>
@@ -44,7 +45,7 @@ const MainCorsi = () => {
                       <Typography variant="h6" component="div">
                         {corso.title}
                       </Typography>
-                      <Typography variant="body2" color="text.secondary">
+                      <Typography variant="body2" color="text.primary">
                         {corso.description}
                       </Typography>
                     </CardContent>
