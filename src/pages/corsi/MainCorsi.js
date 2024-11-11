@@ -26,7 +26,7 @@ const MainCorsi = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1.2, delay: 0.5 }}
       >
-        <Box sx={{ mt: 6, padding: 8 }}>
+        <Box sx={{ mt: 6, padding: 4, alignItems: 'center'}}>
           <Grid container spacing={4} justifyContent="center">
             {corsi.map((corso, index) => (
               <Grid item xs={12} sm={6} md={4} key={index}>

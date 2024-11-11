@@ -35,7 +35,7 @@ const HomePage = () => {
             justifyContent: 'space-between',
             py: 6,
             backgroundColor: '#f5f5f5',
-            padding: 4,
+            padding: 2,
             borderRadius: 2,
           }}
         >
@@ -52,7 +52,7 @@ const HomePage = () => {
             Vai ai corsi
             </Button>
           </Box>
-          <Box sx={{ flex: 1, mt: { xs: 4, md: 0 }, alignContent: { xs: 'center'} }}>
+          <Box sx={{ flex: 1, mt: { xs: 4, md: 0 }, alignContent: { xs: 'center', md: 'left'} }}>
             <motion.img
               src="/images/iconapc.png"
               alt="Hero"
@@ -129,16 +129,16 @@ const HomePage = () => {
             justifyContent: 'space-between',
             py: 6,
             backgroundColor: '#f5f5f5',
-            padding: 8,
-            borderRadius: 2,
+            padding: 6,
+            borderRadius: 1,
           }}
         >
 
-            <Box sx={{ flex: 1, mt: { xs: 4, md: 0 }, alignContent: { xs: 'center'} }}>
+            <Box sx={{ flex: 1, mt: { xs: 2, md: 0 }}}>
               <motion.img
                 src="/images/immaginegabry.png"
                 alt="immagine gabriele"
-                style={{ width: '70%', height: '70%', borderRadius: 8 }}
+                style={{ width: '60%', height: '60%', borderRadius: 4 }}
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 1, delay: 0.3 }}
