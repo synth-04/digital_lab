@@ -3,12 +3,14 @@ import { Container, Typography } from '@mui/material';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import TableOfContents from '../../components/TableOfContents';
+import ParallaxSection from '../../components/ParallaxSection';
 
-const Html = () => (
-  <Container maxWidth="md" sx={{ my: 4 }}>
-    <Typography variant="h3" gutterBottom align="center">
-      Corso base di Sviluppo Web
-    </Typography>
+const Html = () => {
+  return (
+  <Container maxWidth="lg">
+    <ParallaxSection  bgImage="/images/computercorsi.jpg" title="Sviluppo Web con HTML e CSS" />
+        <div style={{ padding: '5px' }}>
+        </div>
     <Typography variant="h5" gutterBottom>
       Introduzione a HTML
     </Typography>
@@ -476,6 +478,6 @@ p {
 
 
   </Container>
-);
+)};
 
 export default Html;

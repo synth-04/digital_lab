@@ -3,12 +3,13 @@ import { Container, Typography } from '@mui/material';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import TableOfContents from '../../components/TableOfContents';
+import ParallaxSection from '../../components/ParallaxSection';
 
 const Architecture = () => (
-  <Container maxWidth="md" sx={{ my: 4 }}>
-    <Typography variant="h3" gutterBottom align="center">
-      Architettura del Computer
-    </Typography>
+  <Container maxWidth="lg">
+    <ParallaxSection  bgImage="/images/computercorsi.jpg" title="Architettura del Computer" />
+        <div style={{ padding: '5px' }}>
+        </div>
     <TableOfContents />
     <Typography variant="body1">
       <p>

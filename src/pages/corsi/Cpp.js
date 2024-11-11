@@ -3,13 +3,14 @@ import { Container, Typography, Box } from '@mui/material';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import TableOfContents from '../../components/TableOfContents';
+import ParallaxSection from '../../components/ParallaxSection';
 
 const Cpp = () => {
   return (
-    <Container maxWidth="md" sx={{ mt: 4 }}>
-      <Typography variant="h3" gutterBottom align="center">
-        Corso base di C++
-      </Typography>
+    <Container maxWidth="lg">
+      <ParallaxSection  bgImage="/images/computercorsi.jpg" title="C++" />
+        <div style={{ padding: '5px' }}>
+        </div>
       <TableOfContents />
       <Box sx={{ my: 4 }}>
         <Typography variant="h5" gutterBottom>

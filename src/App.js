@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage';
 import MainCorsi from './pages/corsi/MainCorsi';
 import Cpp from './pages/corsi/Cpp';
 import Html from './pages/corsi/Html';
+import Sql from './pages/corsi/Sql';
 import Architecture from './pages/corsi/Architecture';
 // import Database from './pages/Corsi/Database';
 // Importa altre pagine di tutorial...
@@ -22,6 +23,7 @@ function App() {
           <Route path="/corsi/programmazionecpp" element={<Cpp />} />
           <Route path="/corsi/web-development" element={<Html />} />
           <Route path="/corsi/architettura-del-computer" element={<Architecture />} />
+          <Route path="/corsi/sql" element={<Sql />} />
 
           {/* Aggiungi altre rotte per ogni pagina di tutorial */}
         </Routes>
@@ -34,5 +36,5 @@ function App() {
 export default App;
 // 
 
-          // <Route path="/tutorials/database" element={<Database />} />
+
 
