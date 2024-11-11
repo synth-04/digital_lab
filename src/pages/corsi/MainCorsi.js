@@ -5,6 +5,7 @@ import Grid from '@mui/material/Grid2';
 import {Link} from 'react-router-dom';
 import { motion } from 'framer-motion';
 import ParallaxSection from '../../components/ParallaxSection';
+import AnimatedInView from '../../components/AnimatedInView';
 
 const corsi = [
   { title: 'Architettura del Computer', description: 'Componenti di base e funzionamento di un elaboratore', link: '/corsi/architettura-del-computer', image: '/images/architettura.jpg' },
@@ -29,6 +30,7 @@ const MainCorsi = () => {
         <Box sx={{ mt: 6, padding: 4, alignItems: 'center'}}>
           <Grid container spacing={4} justifyContent="center">
             {corsi.map((corso, index) => (
+              <AnimatedInView>
               <Grid item xs={12} sm={6} md={4} key={index}>
                 <motion.div
                   whileHover={{ scale: 1.05 }}
@@ -61,6 +63,7 @@ const MainCorsi = () => {
                   </Card>
                 </motion.div>
               </Grid>
+              </AnimatedInView>
             ))}
           </Grid>
         </Box>

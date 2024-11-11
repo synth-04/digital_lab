@@ -3,6 +3,7 @@ import React from 'react';
 import { Container, Typography, Button, Box, Card, CardContent, CardMedia } from '@mui/material';
 import Grid from '@mui/material/Grid2';
 import { motion } from 'framer-motion';
+import AnimatedInView from '../components/AnimatedInView';
 import ParallaxSection from '../components/ParallaxSection';
 import {Link} from 'react-router-dom';
 
@@ -22,11 +23,7 @@ const HomePage = () => {
         </div>
     
       {/* Hero Section*/}
-      <motion.div
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-      >
+      <AnimatedInView>
         <Box
           sx={{
             display: 'flex',
@@ -57,7 +54,14 @@ const HomePage = () => {
             Vai ai corsi
             </Button>
           </Box>
-          <Box sx={{ flex: 1, mt: { xs: 4, md: 0 }, alignContent: { xs: 'center', md: 'left'} }}>
+          <Box sx={{
+                    flex: 1,
+                    mt: { xs: 4, md: 0 },
+                    alignContent: { xs: 'center', md: 'left' },
+                    display: 'flex',
+                    justifyContent: { xs: 'center', md: 'flex-start' },
+                    alignItems: 'center',
+                  }}>
             <motion.img
               src="/images/iconapc.png"
               alt="Hero"
@@ -68,20 +72,17 @@ const HomePage = () => {
             />
           </Box>
         </Box>
-      </motion.div>
+      </AnimatedInView>
 
       {/* Courses Section*/}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1.2, delay: 0.5 }}
-      >
+      <AnimatedInView>
         <Box sx={{ mt: 6, padding: 4}}>
           <Typography variant="h5" gutterBottom align="center">
             I Corsi
           </Typography>
           <Grid container spacing={4} justifyContent="center">
             {corsi.map((corso, index) => (
+               <AnimatedInView>
               <Grid item xs={12} sm={6} md={4} key={index}>
                 <motion.div
                   whileHover={{ scale: 1.05 }}
@@ -114,18 +115,15 @@ const HomePage = () => {
                   </Card>
                 </motion.div>
               </Grid>
+              </AnimatedInView>
             ))}
           </Grid>
         </Box>
-      </motion.div>
+        </AnimatedInView>
 
 
       {/* Presentation Section*/}
-      <motion.div
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-      >
+      <AnimatedInView>
         <Box
           sx={{
             display: 'flex',
@@ -139,7 +137,14 @@ const HomePage = () => {
           }}
         >
 
-            <Box sx={{ flex: 1, mt: { xs: 2, md: 0 }}}>
+            <Box sx={{
+                    flex: 1,
+                    mt: { xs: 4, md: 0 },
+                    alignContent: { xs: 'center', md: 'left' },
+                    display: 'flex',
+                    justifyContent: { xs: 'center', md: 'flex-start' },
+                    alignItems: 'center',
+                    }}>
               <motion.img
                 src="/images/immaginegabry.png"
                 alt="immagine gabriele"
@@ -161,7 +166,7 @@ const HomePage = () => {
             </Button>
           </Box>
         </Box>
-      </motion.div>
+        </AnimatedInView>
 
 
     </Container>
