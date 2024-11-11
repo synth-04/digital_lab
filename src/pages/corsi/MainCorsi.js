@@ -16,7 +16,7 @@ const corsi = [
 
 const MainCorsi = () => {
   return (
-    <Container maxWidth="lg" sx={{ mt: 4 }}>
+    <Container maxWidth="lg">
       <ParallaxSection  bgImage="/images/computercorsi.jpg" title="Corsi" />
         <div style={{ padding: '5px' }}>
         </div>
