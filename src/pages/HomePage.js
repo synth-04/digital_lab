@@ -52,7 +52,7 @@ const HomePage = () => {
             Vai ai corsi
             </Button>
           </Box>
-          <Box sx={{ flex: 1, mt: { xs: 4, md: 0 } }}>
+          <Box sx={{ flex: 1, mt: { xs: 4, md: 0 }, alignContent: { xs: 'center'} }}>
             <motion.img
               src="/images/iconapc.png"
               alt="Hero"
@@ -134,7 +134,7 @@ const HomePage = () => {
           }}
         >
 
-            <Box sx={{ flex: 1, mt: { xs: 4, md: 0 } }}>
+            <Box sx={{ flex: 1, mt: { xs: 4, md: 0 }, alignContent: { xs: 'center'} }}>
               <motion.img
                 src="/images/immaginegabry.png"
                 alt="immagine gabriele"
