@@ -48,7 +48,12 @@ const HomePage = () => {
             Troverai numerose risorse, dai programmi di Informatica scolastici fino a progetti ideati appositamente per gli studenti. 
             Sono risorse totalmente <strong>gratuite</strong>, quindi non sprecarle!
             </Typography>
-            <Button variant="contained" color="primary" sx={{ mt: 2, mr: 2 }}>
+            <Button 
+            variant="contained" 
+            color="primary" 
+            sx={{ mt: 2, mr: 2 }}
+            component={Link}
+            to={'/corsi'}>
             Vai ai corsi
             </Button>
           </Box>
