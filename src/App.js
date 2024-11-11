@@ -6,6 +6,8 @@ import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import MainCorsi from './pages/corsi/MainCorsi';
 import Cpp from './pages/corsi/Cpp';
+import Html from './pages/corsi/Html';
+import Architecture from './pages/corsi/Architecture';
 // import Database from './pages/Corsi/Database';
 // Importa altre pagine di tutorial...
 
@@ -17,7 +19,9 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/corsi" element={<MainCorsi />} />
-          <Route path="/corsi/programmazione" element={<Cpp />} />
+          <Route path="/corsi/programmazionecpp" element={<Cpp />} />
+          <Route path="/corsi/web-development" element={<Html />} />
+          <Route path="/corsi/architettura-del-computer" element={<Architecture />} />
 
           {/* Aggiungi altre rotte per ogni pagina di tutorial */}
         </Routes>

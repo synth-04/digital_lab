@@ -8,7 +8,7 @@ import ParallaxSection from '../../components/ParallaxSection';
 
 const corsi = [
   { title: 'Architettura del Computer', description: 'Componenti di base e funzionamento di un elaboratore', link: '/corsi/architettura-del-computer', image: '/images/architettura.jpg' },
-  { title: 'Programmazione', description: 'Introduzione ai concetti di programmazione e linguaggi di base.', link: '/corsi/programmazione', image: '/images/programmazione.jpg' },
+  { title: 'Programmazione in C++', description: 'Introduzione ai concetti di programmazione in C++.', link: '/corsi/programmazionecpp', image: '/images/programmazione.jpg' },
   { title: 'Web Development', description: 'Creazione di siti web moderni utilizzando HTML, CSS e JavaScript.', link: '/corsi/web-development', image: '/images/webdev.jpg'},
   { title: 'Database', description: 'Fondamenti di progettazione e gestione di database relazionali.', link: '/corsi/database', image: '/images/database.png'},
   { title: 'Sicurezza Informatica', description: 'Comprendere le basi della sicurezza informatica e delle reti.', link: '/corsi/sicurezza-informatica', image: '/images/cybersecurity.jpg' },
