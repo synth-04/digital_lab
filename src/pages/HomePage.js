@@ -18,7 +18,7 @@ const corsi = [
 const HomePage = () => {
   return (
     <Container maxWidth="lg">
-        <ParallaxSection  bgImage="/images/computer2.jpg" title="Benvenuto nel Digital Lab" />
+        <ParallaxSection  bgImage="/images/computer2.jpg" title="Benvenuto!" />
         <div style={{ padding: '5px' }}>
         </div>
     
