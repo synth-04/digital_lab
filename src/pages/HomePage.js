@@ -29,7 +29,7 @@ const HomePage = () => {
           }}
         >
           <Box sx={{ flex: 1, textAlign: { xs: 'center', md: 'left' } }}>
-            <Typography variant="h4" gutterBottom>
+            <Typography variant="h4" sx={{ fontWeight: 'bold', my: 4 }} >
              Pronto a cominciare?
             </Typography>
             <Typography variant="body1" color="text.primary" gutterBottom>
@@ -95,7 +95,7 @@ const HomePage = () => {
       {/* Courses Section*/}
       <AnimatedInView>
         <Box sx={{ mt: 6, padding: 4}}>
-          <Typography variant="h5" gutterBottom align="center">
+          <Typography variant="h4" sx={{ fontWeight: 'bold', my: 4 }} align="center" >
             I Corsi
           </Typography>
           <Grid container spacing={4} justifyContent="center">

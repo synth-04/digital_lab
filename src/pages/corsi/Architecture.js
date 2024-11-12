@@ -11,7 +11,7 @@ const Architecture = () => (
         <div style={{ padding: '5px' }}>
         </div>
     <TableOfContents />
-    <Typography variant="body1">
+    <Typography variant="body1" sx={{ my: 4 }}> 
       <p>
         L'architettura del computer è l'insieme delle regole e dei metodi che descrivono la funzionalità, l'organizzazione e l'implementazione dei sistemi informatici. Comprende l'architettura del set di istruzioni, il design del microprocessore, l'architettura di memoria e l'interconnessione dei componenti principali.
       </p>

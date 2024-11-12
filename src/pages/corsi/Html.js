@@ -11,7 +11,7 @@ const Html = () => {
     <ParallaxSection  bgImage="/images/computercorsi.jpg" title="Sviluppo Web con HTML e CSS" />
         <div style={{ padding: '5px' }}>
         </div>
-    <Typography variant="h5" gutterBottom>
+    <Typography variant="h5" gutterBottom sx={{ my: 4 }}>
       Introduzione a HTML
     </Typography>
     <TableOfContents />

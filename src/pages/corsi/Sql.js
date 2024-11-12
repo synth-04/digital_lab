@@ -12,7 +12,7 @@ const Sql = () => (
         </div>
     <TableOfContents />
 
-    <Typography variant="h5" gutterBottom>
+    <Typography variant="h5" gutterBottom sx={{ my: 4 }}>
       Introduzione
     </Typography>
     <Typography variant="body1">

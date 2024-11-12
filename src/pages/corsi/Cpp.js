@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Typography, Box } from '@mui/material';
+import { Container, Typography} from '@mui/material';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { monokai } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import TableOfContents from '../../components/TableOfContents';
@@ -12,17 +12,17 @@ const Cpp = () => {
         <div style={{ padding: '5px' }}>
         </div>
       <TableOfContents />
-      <Box sx={{ my: 4 }}>
-        <Typography variant="h5" gutterBottom>
+      
+        <Typography variant="h5" gutterBottom sx={{ my: 4 }}>
           Introduzione
         </Typography>
         <Typography variant="body1">
           Questo corso offre una panoramica sui fondamenti del linguaggio di programmazione C++.
           Saranno trattati concetti di base come la struttura di un programma, variabili, costanti, cicli, funzioni e molto altro.
         </Typography>
-      </Box>
+      
 
-      <Box sx={{ my: 4 }}>
+      
         <Typography variant="h5" gutterBottom>
           Struttura di base di un programma C++
         </Typography>
@@ -51,9 +51,9 @@ int main() {
             <li>Notate che ogni istruzione termina con il punto e virgola (<code>;</code>).</li>
             </ul>
         </Typography>
-      </Box>
+      
 
-      <Box sx={{ my: 4 }}>
+      
         <Typography variant="h5" gutterBottom>
           Dichiarazione di Variabili e Costanti
         </Typography>
@@ -158,9 +158,9 @@ const float PI_GRECO = 3.14; // Definizione di una costante`}
             </ul>
 
         </Typography>
-      </Box>
+      
 
-      <Box sx={{ my: 4 }}>
+      
         <Typography variant="h5" gutterBottom>
             Operatori algebrici
         </Typography>
@@ -252,9 +252,9 @@ const float PI_GRECO = 3.14; // Definizione di una costante`}
             </tr>
             </table>
         </Typography>
-        </Box>
+        
 
-      <Box sx={{ my: 4 }}>
+      
         <Typography variant="h5" gutterBottom>
             Operazione standard di I/O
         </Typography>
@@ -307,8 +307,8 @@ int main()
     return 0;
 }`}
         </SyntaxHighlighter>
-        </Box>
-        <Box sx={{ my: 4 }}>
+        
+        
         <Typography variant="h5" gutterBottom>
             Selezione
         </Typography>
@@ -368,8 +368,8 @@ switch (variabile)
         istruzioni-default;
     }`}
             </SyntaxHighlighter>
-        </Box>
-        <Box sx={{ my: 4 }}>
+        
+        
   <Typography variant="h5" gutterBottom>
     Iterazione
   </Typography>
@@ -408,8 +408,8 @@ switch (variabile)
     // blocco di istruzioni
 }`}
   </SyntaxHighlighter>
-</Box>
-<Box sx={{ my: 4 }}>
+
+
   <Typography variant="h5" gutterBottom>
     Funzioni
   </Typography>
@@ -474,8 +474,8 @@ switch (variabile)
       Le variabili globali, al contrario, vengono dichiarate prima della dichiarazione del <code>main()</code>, quindi in nessun blocco specifico. Fanno parte quindi di una memoria condivisa. L’insieme di queste variabili è l’ambiente globale, distinto dall’ambiente locale.
     </p>
   </Typography>
-</Box>
-<Box sx={{ my: 4 }}>
+
+
   <Typography variant="h5" gutterBottom>
     Dati strutturati
   </Typography>
@@ -692,9 +692,9 @@ int isspace(int c); // spazio, tabulazione, carriage return, a capo, tab vert
 int isupper(int c); // lettera maiuscola
 int isdigit(int c); // cifra esadecimale`}
   </SyntaxHighlighter>
-</Box>
 
-<Box sx={{ my: 4 }}>
+
+
   <Typography variant="h5" gutterBottom>
     Ricerca, disposizione e ordinamento elementi vettori
   </Typography>
@@ -943,7 +943,7 @@ int main()
 }`}
 </SyntaxHighlighter>
 
-</Box>
+
 
 
 
