@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Typography } from '@mui/material';
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { monokai } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import TableOfContents from '../../components/TableOfContents';
 import ParallaxSection from '../../components/ParallaxSection';
 
@@ -36,13 +36,13 @@ const Sql = () => (
     <Typography variant="body1">
       <p>Per creare un database:</p>
     </Typography>
-    <SyntaxHighlighter language="sql" style={docco}>
+    <SyntaxHighlighter language="sql" style={monokai}>
       {`CREATE DATABASE [IF NOT EXISTS] nome_database;`}
     </SyntaxHighlighter>
     <Typography variant="body1">
       <p>Per eliminare un database esistente:</p>
     </Typography>
-    <SyntaxHighlighter language="sql" style={docco}>
+    <SyntaxHighlighter language="sql" style={monokai}>
       {`DROP DATABASE [IF EXISTS] nome_database;`}
     </SyntaxHighlighter>
 
@@ -53,7 +53,7 @@ const Sql = () => (
       <p>Una tabella in SQL è formata da attributi, domini e vincoli:</p>
       <p>Il costrutto di creazione ha questa sintassi:</p>
     </Typography>
-    <SyntaxHighlighter language="sql" style={docco}>
+    <SyntaxHighlighter language="sql" style={monokai}>
       {`CREATE TABLE nome_tabella (
   nome_campo tipo(lunghezza) [NOT NULL] [PRIMARY KEY] [UNIQUE] [...],
   FOREIGN KEY (nome_campo) REFERENCES nome_tabella2(nome_campo),
@@ -74,7 +74,7 @@ const Sql = () => (
     <Typography variant="body1">
       <p>Vincoli di integrità referenziale con <code>FOREIGN KEY</code>:</p>
     </Typography>
-    <SyntaxHighlighter language="sql" style={docco}>
+    <SyntaxHighlighter language="sql" style={monokai}>
       {`FOREIGN KEY (nome_campo) REFERENCES nome_tabella2(nome_campo)
 [ON UPDATE/DELETE {CASCADE | NO ACTION | SET NULL | SET DEFAULT}]`}
     </SyntaxHighlighter>
@@ -90,7 +90,7 @@ const Sql = () => (
     <Typography variant="h5" gutterBottom>
       Modificare, eliminare o rinominare una tabella
     </Typography>
-    <SyntaxHighlighter language="sql" style={docco}>
+    <SyntaxHighlighter language="sql" style={monokai}>
       {`ALTER TABLE nome_tabella ADD/DROP/ALTER/RENAME [COLUMN nome_campo tipo_campo];
 DROP TABLE nome_tabella;
 ALTER TABLE nome_tabella RENAME nuovo_nome_tabella;`}
@@ -114,7 +114,7 @@ ALTER TABLE nome_tabella RENAME nuovo_nome_tabella;`}
         Il linguaggio DML consente l'inserimento, eliminazione e aggiornamento dei record:
       </p>
     </Typography>
-    <SyntaxHighlighter language="sql" style={docco}>
+    <SyntaxHighlighter language="sql" style={monokai}>
       {`INSERT INTO tabella (campo1, campo2, ...) VALUES ("valore1", "valore2", ...);
 DELETE FROM nome_tabella WHERE condizione;
 DELETE FROM nome_tabella; -- Elimina tutti i record
@@ -129,7 +129,7 @@ UPDATE tabella SET attributo = valore WHERE condizione;`}
         Il costrutto <code>SELECT</code> consente di interrogare il database:
       </p>
     </Typography>
-    <SyntaxHighlighter language="sql" style={docco}>
+    <SyntaxHighlighter language="sql" style={monokai}>
       {`SELECT A1, ..., An [AS Alias] FROM tabella1, ..., tabella [WHERE condizione]
 GROUP BY campo ASC|DESC
 HAVING condizione
@@ -138,7 +138,7 @@ ORDER BY campo ASC|DESC;`}
     <Typography variant="body1">
       <p>Seleziona tutti i campi o solo quelli specificati:</p>
     </Typography>
-    <SyntaxHighlighter language="sql" style={docco}>
+    <SyntaxHighlighter language="sql" style={monokai}>
       {`SELECT * FROM Amici WHERE citta="Napoli";
 SELECT nome, cognome FROM Amici WHERE citta="Napoli";`}
     </SyntaxHighlighter>
@@ -147,7 +147,7 @@ SELECT nome, cognome FROM Amici WHERE citta="Napoli";`}
         Usa <code>DISTINCT</code> per evitare duplicati:
       </p>
     </Typography>
-    <SyntaxHighlighter language="sql" style={docco}>
+    <SyntaxHighlighter language="sql" style={monokai}>
       {`SELECT DISTINCT campo FROM tabella;`}
     </SyntaxHighlighter>
 
@@ -159,7 +159,7 @@ SELECT nome, cognome FROM Amici WHERE citta="Napoli";`}
         Se vogliamo interrogare più tabelle legate tra loro da una relazione, dobbiamo tenere in considerazione i campi coinvolti nella congiunzione tra tabelle. I campi vanno collegati attraverso una condizione <code>WHERE</code> oppure si può utilizzare il <code>JOIN</code>.
       </p>
     </Typography>
-    <SyntaxHighlighter language="sql" style={docco}>
+    <SyntaxHighlighter language="sql" style={monokai}>
       {`SELECT ...
 FROM Prodotti, Fornitori
 WHERE Fornitori.ID_fornitore = Prodotti.id_fornitore;`}
@@ -167,7 +167,7 @@ WHERE Fornitori.ID_fornitore = Prodotti.id_fornitore;`}
     <Typography variant="h6" gutterBottom>
       Esempi
     </Typography>
-    <SyntaxHighlighter language="sql" style={docco}>
+    <SyntaxHighlighter language="sql" style={monokai}>
       {`-- Seleziona tutti i dati dei pazienti
 SELECT * FROM Pazienti;
 
@@ -199,7 +199,7 @@ WHERE V.pressioneMIN > 85 AND V.pressioneMAX > 125 AND P.ID_paziente = V.id_pazi
         <li><code>BETWEEN</code>: Compreso tra due valori</li>
       </ul>
     </Typography>
-    <SyntaxHighlighter language="sql" style={docco}>
+    <SyntaxHighlighter language="sql" style={monokai}>
       {`-- Uso LIKE
 SELECT P.cognome
 FROM Persone AS P
@@ -214,7 +214,7 @@ WHERE P.altezza BETWEEN 160 AND 170; -- Seleziona tutte le persone con altezza t
     <Typography variant="h5" gutterBottom>
       Operazioni aritmetiche con SELECT
     </Typography>
-    <SyntaxHighlighter language="sql" style={docco}>
+    <SyntaxHighlighter language="sql" style={monokai}>
       {`SELECT (campo1 + campo2) AS "Somma" FROM tabella; -- Somma
 SELECT (campo1 - campo2) AS "Sottrazione" FROM tabella; -- Sottrazione
 SELECT (campo1 * campo2) AS "Prodotto" FROM tabella; -- Prodotto
@@ -227,7 +227,7 @@ SELECT SQRT(campo) AS "Radice" FROM tabella; -- Radice quadrata`}
     <Typography variant="h5" gutterBottom>
       Uso di <code>IN</code> e <code>IS NULL</code>
     </Typography>
-    <SyntaxHighlighter language="sql" style={docco}>
+    <SyntaxHighlighter language="sql" style={monokai}>
       {`-- Uso IN
 SELECT P.nome, P.cognome
 FROM Pazienti P, Visite V
@@ -249,7 +249,7 @@ WHERE P.ID_pazienti = V.id_paziente AND (V.pressionemax IS NULL OR V.pressionemi
         La congiunzione, o <code>JOIN</code>, collega i dati di più tabelle:
       </p>
     </Typography>
-    <SyntaxHighlighter language="sql" style={docco}>
+    <SyntaxHighlighter language="sql" style={monokai}>
       {`-- Sintassi implicita
 SELECT listacampi
 FROM tab1, tab2
@@ -269,7 +269,7 @@ FROM tab1 INNER JOIN tab2 ON tab1.campo = tab2.campo;`}
     <Typography variant="h5" gutterBottom>
       Operatori aggregati
     </Typography>
-    <SyntaxHighlighter language="sql" style={docco}>
+    <SyntaxHighlighter language="sql" style={monokai}>
       {`-- Contare i record
 SELECT COUNT(campo)
 FROM tab1
@@ -289,7 +289,7 @@ FROM tab1
     <Typography variant="h5" gutterBottom>
       Query annidate
     </Typography>
-    <SyntaxHighlighter language="sql" style={docco}>
+    <SyntaxHighlighter language="sql" style={monokai}>
       {`-- Esempio di subquery
 query esterna
 > ANY
@@ -303,7 +303,7 @@ EXISTS
     <Typography variant="h5" gutterBottom>
       Viste
     </Typography>
-    <SyntaxHighlighter language="sql" style={docco}>
+    <SyntaxHighlighter language="sql" style={monokai}>
       {`-- Creare una vista
 CREATE VIEW nome_vista AS
 query;
@@ -315,7 +315,7 @@ DROP VIEW nome_vista;`}
     <Typography variant="h5" gutterBottom>
       Sicurezza e Privilegi
     </Typography>
-    <SyntaxHighlighter language="sql" style={docco}>
+    <SyntaxHighlighter language="sql" style={monokai}>
       {`-- Assegnare privilegi
 GRANT SELECT, INSERT, DELETE ON tabella TO nome_utente;
 
@@ -326,7 +326,7 @@ REVOKE SELECT, INSERT ON tabella FROM nome_utente;`}
     <Typography variant="h5" gutterBottom>
       Transazioni
     </Typography>
-    <SyntaxHighlighter language="sql" style={docco}>
+    <SyntaxHighlighter language="sql" style={monokai}>
       {`-- Iniziare e gestire una transazione
 BEGIN TRANSACTION;
 UPDATE CC SET Saldo = Saldo - 50 WHERE Conto = 123;

@@ -24,19 +24,16 @@ const HomePage = () => {
             alignItems: 'center',
             justifyContent: 'space-between',
             py: 6,
-            backgroundColor: '#f5f5f5',
             padding: 2,
             borderRadius: 2,
           }}
         >
           <Box sx={{ flex: 1, textAlign: { xs: 'center', md: 'left' } }}>
-            <Typography variant="h5" gutterBottom>
+            <Typography variant="h4" gutterBottom>
              Pronto a cominciare?
             </Typography>
-            <Typography variant="h6" color="text.primary" gutterBottom>
-            Il <strong>Digital Lab</strong> è un progetto creato per ampliare le conoscenze informatiche degli studenti delle scuole secondarie.
-            Troverai numerose risorse, dai programmi di Informatica scolastici fino a progetti ideati appositamente per gli studenti. 
-            Sono risorse totalmente <strong>gratuite</strong>, quindi non sprecarle!
+            <Typography variant="body1" color="text.primary" gutterBottom>
+            Il <strong>Digital Lab</strong> è nato per supportare gli studenti delle scuole secondarie nel loro percorso di apprendimento informatico. Crediamo che ogni studente debba avere accesso a risorse moderne, innovative e gratuite per sviluppare competenze fondamentali e affrontare le sfide del domani.
             </Typography>
             <Button 
             variant="contained" 
@@ -65,7 +62,35 @@ const HomePage = () => {
             />
           </Box>
         </Box>
-      </AnimatedInView>
+     </AnimatedInView> 
+     <AnimatedInView>
+      <Box
+            sx={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                height: '300px', // Altezza regolabile a piacere
+                backgroundColor: '#1E3A5F', // Colore di sfondo scuro per contrasto
+                color: '#FFC857', // Colore del testo per creare contrasto
+                textAlign: 'center',
+                padding: 2,
+                borderRadius: 2,
+                boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.2)',
+                flexDirection: { xs: 'column', md: 'row' },
+            }}
+            component={motion.div}
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1 }}
+        >
+            <Typography variant="h4" sx={{ fontWeight: 'bold' }}>
+                Impara, pratica, migliora.
+            </Typography>
+            <Typography variant="body1" sx={{ marginTop: 1 }}>
+                Non importa da dove inizi: ciò che conta è il percorso che fai per crescere.
+            </Typography>
+        </Box>
+        </AnimatedInView>
 
       {/* Courses Section*/}
       <AnimatedInView>
@@ -124,9 +149,11 @@ const HomePage = () => {
             alignItems: 'center',
             justifyContent: 'space-between',
             py: 6,
-            backgroundColor: '#f5f5f5',
             padding: 6,
             borderRadius: 1,
+            backgroundColor: '#1E3A5F',
+            color: '#FFC857',
+            boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.2)',
           }}
         >
 
@@ -137,6 +164,7 @@ const HomePage = () => {
                     display: 'flex',
                     justifyContent: { xs: 'center', md: 'flex-start' },
                     alignItems: 'center',
+                    
                     }}>
               <motion.img
                 src="/images/immaginegabry.png"
@@ -147,11 +175,14 @@ const HomePage = () => {
                 transition={{ duration: 1, delay: 0.3 }}
               />
             </Box>
-            <Box sx={{ flex: 1, textAlign: { xs: 'center', md: 'left' } }}>
-            <Typography variant="h5" gutterBottom>
+            <Box sx={{ 
+              flex: 1, 
+              textAlign: { xs: 'center', md: 'left' }
+               }}>
+            <Typography variant="h4" sx={{ fontWeight: 'bold' }}>
              Chi sono?
             </Typography>
-            <Typography variant="h6" color="text.primary" gutterBottom>
+            <Typography variant="body1" sx={{ marginTop: 1 }}>
             Sono Gabriele Di Pinto, docente di Laboratorio di Scienze Informatiche. Nella vita mi occupo di digitale, innovazione e business online, oltre che di formazione per ragazzi, adulti e aziende. Ho creato il Digital Lab per fornire ai miei studenti un luogo dove studiare, esercitarsi e crescere. Insegnare non è soltanto un mestiere, ma una passione per me.
             </Typography>
             <Button variant="contained" color="primary" sx={{ mt: 2 }}>

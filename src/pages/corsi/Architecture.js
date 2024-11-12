@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Typography } from '@mui/material';
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { monokai } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import TableOfContents from '../../components/TableOfContents';
 import ParallaxSection from '../../components/ParallaxSection';
 
@@ -48,7 +48,7 @@ const Architecture = () => (
         Il ciclo di esecuzione delle istruzioni, noto anche come ciclo di fetch-decode-execute, è il processo che la CPU utilizza per eseguire le istruzioni dei programmi.
       </p>
     </Typography>
-    <SyntaxHighlighter language="text" style={docco}>
+    <SyntaxHighlighter language="text" style={monokai}>
       {`1. Fetch (Prelievo): La CPU preleva l'istruzione successiva dalla memoria.
 2. Decode (Decodifica): L'istruzione viene decodificata per determinare l'operazione richiesta.
 3. Execute (Esecuzione): La CPU esegue l'operazione richiesta dall'istruzione.`}
@@ -71,7 +71,7 @@ const Architecture = () => (
     <Typography variant="h5" gutterBottom>
       Esempio di Architettura
     </Typography>
-    <SyntaxHighlighter language="text" style={docco}>
+    <SyntaxHighlighter language="text" style={monokai}>
       {`+-----------------+
 |     CPU         |
 |-----------------|

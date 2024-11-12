@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Typography, Box } from '@mui/material';
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { monokai } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import TableOfContents from '../../components/TableOfContents';
 import ParallaxSection from '../../components/ParallaxSection';
 
@@ -29,7 +29,7 @@ const Cpp = () => {
         <Typography variant="body1">
           Un semplice esempio di programma in C++ che mostra come visualizzare "Ciao Mondo!".
         </Typography>
-        <SyntaxHighlighter language="cpp" style={docco}>
+        <SyntaxHighlighter language="cpp" style={monokai}>
           {`#include <iostream> // Caricamento della libreria di I/O
 using namespace std;
 
@@ -134,7 +134,7 @@ int main() {
             </p>
           
         </Typography>
-        <SyntaxHighlighter language="cpp" style={docco}>
+        <SyntaxHighlighter language="cpp" style={monokai}>
           {`int delta = 3, teta = 0; // Assegnazione e dichiarazione congiunta
 const float PI_GRECO = 3.14; // Definizione di una costante`}
         </SyntaxHighlighter>
@@ -267,7 +267,7 @@ const float PI_GRECO = 3.14; // Definizione di una costante`}
             </p>
         </Typography>
 
-        <SyntaxHighlighter language="cpp" style={docco}>
+        <SyntaxHighlighter language="cpp" style={monokai}>
             {`cout << "Testo" << endl; 
 //con endl si va a capo alla successiva riga dello schermo
 cout.precision(3); 
@@ -280,7 +280,7 @@ cin >> base;
 
             <strong>Esercizio: calcola area e perimetro di un rettangolo, dati base e altezza</strong>
         </Typography>
-        <SyntaxHighlighter language="cpp" style={docco}>
+        <SyntaxHighlighter language="cpp" style={monokai}>
         {`#include <iostream> // Libreria standard per I/O
 using namespace std; //per indicare lo spazio dei nomi delle variabili
 int main()
@@ -312,7 +312,7 @@ int main()
         <Typography variant="h5" gutterBottom>
             Selezione
         </Typography>
-        <SyntaxHighlighter language="cpp" style={docco}>
+        <SyntaxHighlighter language="cpp" style={monokai}>
             {`//Semplice e doppia 
 //(Se l'istruzione è unica, non c'è bisogno di parentesi graffe)
 if (condizione) 
@@ -378,7 +378,7 @@ switch (variabile)
       <strong>Precondizionata</strong>: La condizione viene verificata all’ingresso e dopo ogni ciclo.
     </p>
   </Typography>
-  <SyntaxHighlighter language="cpp" style={docco}>
+  <SyntaxHighlighter language="cpp" style={monokai}>
     {`while (condizione)
 {
     // blocco di istruzioni
@@ -390,7 +390,7 @@ switch (variabile)
       <strong>Post Condizionata</strong>: La condizione viene verificata solo alla fine del ciclo.
     </p>
   </Typography>
-  <SyntaxHighlighter language="cpp" style={docco}>
+  <SyntaxHighlighter language="cpp" style={monokai}>
     {`do
 {
     // blocco di istruzioni
@@ -402,7 +402,7 @@ switch (variabile)
       <strong>Definita</strong>: Conosciamo in anticipo il numero di volte che il ciclo deve ripetersi.
     </p>
   </Typography>
-  <SyntaxHighlighter language="cpp" style={docco}>
+  <SyntaxHighlighter language="cpp" style={monokai}>
     {`for (inizializzazione; condizione di entrata; aggiornamento passo)
 {
     // blocco di istruzioni
@@ -426,7 +426,7 @@ switch (variabile)
       Definizione di funzione in linguaggio C++:
     </p>
   </Typography>
-  <SyntaxHighlighter language="cpp" style={docco}>
+  <SyntaxHighlighter language="cpp" style={monokai}>
     {`tipo_restituito nome_funzione (lista_parametri_formali)
 // lista_parametri_formali=coppia tra tipo variabile e identificatore variabile`}
   </SyntaxHighlighter>
@@ -436,7 +436,7 @@ switch (variabile)
       <strong>Esempio:</strong>
     </p>
   </Typography>
-  <SyntaxHighlighter language="cpp" style={docco}>
+  <SyntaxHighlighter language="cpp" style={monokai}>
     {`int maggiore(int n1, int n2) // viene chiamato prototipo
 {
     if (n1 >= n2)
@@ -454,7 +454,7 @@ switch (variabile)
       Un programma che non restituisce nulla al programma chiamante può essere definito con parametro di ritorno void:
     </p>
   </Typography>
-  <SyntaxHighlighter language="cpp" style={docco}>
+  <SyntaxHighlighter language="cpp" style={monokai}>
     {`void procedura1(...)
 {
     ...
@@ -486,7 +486,7 @@ switch (variabile)
     </p>
     <p>Il vettore in C++ viene dichiarato così:</p>
   </Typography>
-  <SyntaxHighlighter language="cpp" style={docco}>
+  <SyntaxHighlighter language="cpp" style={monokai}>
     {`int miovettore[3]; // Tipo, nomevettore e dimensione
 miovettore[0] = 10; // Mettiamo nella prima posizione il valore 10`}
   </SyntaxHighlighter>
@@ -495,7 +495,7 @@ miovettore[0] = 10; // Mettiamo nella prima posizione il valore 10`}
       Altro caso:
     </p>
   </Typography>
-  <SyntaxHighlighter language="cpp" style={docco}>
+  <SyntaxHighlighter language="cpp" style={monokai}>
     {`int miovettore[] = {10, 300, 43}; // Si inizializzano le celle al momento della definizione del vettore
 // non necessaria la dimensione in questo caso`}
   </SyntaxHighlighter>
@@ -507,7 +507,7 @@ miovettore[0] = 10; // Mettiamo nella prima posizione il valore 10`}
       Per dichiarare una matrice:
     </p>
   </Typography>
-  <SyntaxHighlighter language="cpp" style={docco}>
+  <SyntaxHighlighter language="cpp" style={monokai}>
     {`int miovettore[4][3]; // Vettore da 4 righe e 3 colonne`}
   </SyntaxHighlighter>
 
@@ -520,7 +520,7 @@ miovettore[0] = 10; // Mettiamo nella prima posizione il valore 10`}
       La tabella è una variabile strutturata con un insieme finito di elementi. Il tracciato record è la sua struttura record.
     </p>
   </Typography>
-  <SyntaxHighlighter language="cpp" style={docco}>
+  <SyntaxHighlighter language="cpp" style={monokai}>
     {`struct alunni { // definizione struttura
     char cognome[30];
     char nome[20];
@@ -536,7 +536,7 @@ struct alunni pinoverdi, toniesposito; // Definiamo la struttura più tardi`}
       Per scrivere e leggere il contenuto dei campi di un record si utilizza la <strong>dot notation</strong>:
     </p>
   </Typography>
-  <SyntaxHighlighter language="cpp" style={docco}>
+  <SyntaxHighlighter language="cpp" style={monokai}>
     {`rossiMario.classe = 3;
 cout << "Cognome: " << rossiMario.cognome;`}
   </SyntaxHighlighter>
@@ -545,7 +545,7 @@ cout << "Cognome: " << rossiMario.cognome;`}
       Possiamo formare anche record di record:
     </p>
   </Typography>
-  <SyntaxHighlighter language="cpp" style={docco}>
+  <SyntaxHighlighter language="cpp" style={monokai}>
     {`rossiMario.dataVoto.giorno = 11; // doppia dot notation`}
   </SyntaxHighlighter>
 
@@ -558,7 +558,7 @@ cout << "Cognome: " << rossiMario.cognome;`}
       Array di caratteri:
     </p>
   </Typography>
-  <SyntaxHighlighter language="cpp" style={docco}>
+  <SyntaxHighlighter language="cpp" style={monokai}>
     {`char parola[10]; // parola di 9 caratteri + carattere speciale /0`}
   </SyntaxHighlighter>
   <Typography variant="body1">
@@ -566,7 +566,7 @@ cout << "Cognome: " << rossiMario.cognome;`}
       Con la libreria String:
     </p>
   </Typography>
-  <SyntaxHighlighter language="cpp" style={docco}>
+  <SyntaxHighlighter language="cpp" style={monokai}>
     {`#include <string>
 
 string nome = "mario";`}
@@ -582,7 +582,7 @@ string nome = "mario";`}
       Concatenazione
     </p>
   </Typography>
-  <SyntaxHighlighter language="cpp" style={docco}>
+  <SyntaxHighlighter language="cpp" style={monokai}>
     {`s1 = "Hello";
 s2 = "World";
 s3 = s1 + " " + s2;`}
@@ -593,7 +593,7 @@ s3 = s1 + " " + s2;`}
       Confronto tra stringhe
     </p>
 </Typography>
-<SyntaxHighlighter language="cpp" style={docco}>
+<SyntaxHighlighter language="cpp" style={monokai}>
 {`// Ordinamento lessicografico
 // Antonio == Antonio
 // Antonio < Pino
@@ -613,7 +613,7 @@ cout << s1.compare(s2); // restituisce 6, la posizione di m, il primo carattere 
       Lunghezza di una stringa con size
     </p>
   </Typography>
-  <SyntaxHighlighter language="cpp" style={docco}>
+  <SyntaxHighlighter language="cpp" style={monokai}>
     {`cout << s1.size(); // restituisce 4`}
   </SyntaxHighlighter>
 
@@ -622,7 +622,7 @@ cout << s1.compare(s2); // restituisce 6, la posizione di m, il primo carattere 
       Inserimento di sottostringa con insert
     </p>
   </Typography>
-  <SyntaxHighlighter language="cpp" style={docco}>
+  <SyntaxHighlighter language="cpp" style={monokai}>
     {`cout << s2.insert(5, "mondo"); // inserisce in posizione 5 la parola mondo`}
   </SyntaxHighlighter>
 
@@ -631,7 +631,7 @@ cout << s1.compare(s2); // restituisce 6, la posizione di m, il primo carattere 
       Sostituzione e rimozione con replace
     </p>
   </Typography>
-  <SyntaxHighlighter language="cpp" style={docco}>
+  <SyntaxHighlighter language="cpp" style={monokai}>
     {`s2 = "a tutti";
 
 cout << s1.replace(5, 9, s2); // restituisce "ciao a tutti"`}
@@ -642,7 +642,7 @@ cout << s1.replace(5, 9, s2); // restituisce "ciao a tutti"`}
     Accesso ad una sottostringa
     </p>
   </Typography>
-  <SyntaxHighlighter language="cpp" style={docco}>
+  <SyntaxHighlighter language="cpp" style={monokai}>
     {`s1 = "Ciao mondo";
 cout << s1.substr(5, 9); // Risultato "mondo"`}
   </SyntaxHighlighter>
@@ -652,7 +652,7 @@ cout << s1.substr(5, 9); // Risultato "mondo"`}
         Ricerca di sottostringhe
     </p>
   </Typography>
-  <SyntaxHighlighter language="cpp" style={docco}>
+  <SyntaxHighlighter language="cpp" style={monokai}>
     {`s1 = "Ciao mondo";
 cout << s1.find("do"); // Posizione 8 come output`}
   </SyntaxHighlighter>
@@ -665,7 +665,7 @@ cout << s1.find("do"); // Posizione 8 come output`}
       da stringa a numeri:
     </p>
   </Typography>
-  <SyntaxHighlighter language="cpp" style={docco}>
+  <SyntaxHighlighter language="cpp" style={monokai}>
     {`int k1 = atoi(s1.c_str());
 float k1 = atof(s1.c_str());`}
   </SyntaxHighlighter>
@@ -674,7 +674,7 @@ float k1 = atof(s1.c_str());`}
       da numeri a stringa
     </p>
   </Typography>
-  <SyntaxHighlighter language="cpp" style={docco}>
+  <SyntaxHighlighter language="cpp" style={monokai}>
     {`string n1 = to_string(s1);`}
   </SyntaxHighlighter>
 
@@ -683,7 +683,7 @@ float k1 = atof(s1.c_str());`}
       Nella libreria <code>&lt;ctype.c&gt;</code> vi sono le funzioni con parametro di ritorno (restituisce un valore diverso da zero se esiste un certo carattere):
     </p>
   </Typography>
-  <SyntaxHighlighter language="cpp" style={docco}>
+  <SyntaxHighlighter language="cpp" style={monokai}>
     {`int isgraph(int c); // carattere visualizzabile diverso da spazio
 int islower(int c); // lettera minuscola
 int isprint(int c); // carattere visualizzabile
@@ -704,7 +704,7 @@ int isdigit(int c); // cifra esadecimale`}
       Carichiamo il vettore di numeri casuali. Poi, cerchiamo un certo valore e, se esiste, ne segnala la posizione delle sue occorrenze o restituisce la sua inesistenza.
     </p>
   </Typography>
-  <SyntaxHighlighter language="cpp" style={docco}>
+  <SyntaxHighlighter language="cpp" style={monokai}>
     {`#include <iostream>
 #include <stdlib.h>
 using namespace std;
@@ -750,7 +750,7 @@ int main()
     Memorizziamo in due vettori paralleli i cognomi e i nomi degli alunni di una classe e successivamente visualizziamo i cognomi di quelli che hanno lo stesso nome richiesto dall’utente.
   </p>
 </Typography>
-<SyntaxHighlighter language="cpp" style={docco}>
+<SyntaxHighlighter language="cpp" style={monokai}>
   {`#include <iostream>
 #include <string>
 using namespace std;
@@ -790,7 +790,7 @@ int main()
     Dato un vettore con numeri interi generati casualmente, ordiniamo i numeri in ordine crescente usando il metodo Bubble Sort.
   </p>
 </Typography>
-<SyntaxHighlighter language="cpp" style={docco}>
+<SyntaxHighlighter language="cpp" style={monokai}>
   {`#include <iostream>
 #include <cstdlib>
 #include <ctime>
@@ -850,7 +850,7 @@ int main()
     Dato un vettore con numeri interi generati casualmente, ordiniamo i numeri in ordine crescente usando il metodo Select Sort.
   </p>
 </Typography>
-<SyntaxHighlighter language="cpp" style={docco}>
+<SyntaxHighlighter language="cpp" style={monokai}>
   {`#include <iostream>
 #include <cstdlib>
 #include <ctime>
@@ -912,7 +912,7 @@ int main()
     Realizziamo un programma che inserisce numeri casuali in un vettore ma in modo ordinato.
   </p>
 </Typography>
-<SyntaxHighlighter language="cpp" style={docco}>
+<SyntaxHighlighter language="cpp" style={monokai}>
   {`#include <iostream>
 #include <vector>
 #include <algorithm>

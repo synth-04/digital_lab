@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Typography } from '@mui/material';
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { monokai } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import TableOfContents from '../../components/TableOfContents';
 import ParallaxSection from '../../components/ParallaxSection';
 
@@ -25,7 +25,7 @@ const Html = () => {
         In genere, i tag funzionano a “scatole cinesi”: vi è un tag di apertura e uno di chiusura. Tutto ciò che è contenuto all’interno dei due tag, è inserito nella pagina web nella posizione corretta. Ad esempio:
       </p>
     </Typography>
-    <SyntaxHighlighter language="html" style={docco}>
+    <SyntaxHighlighter language="html" style={monokai}>
       {`<b> Ciao! </b>`}
     </SyntaxHighlighter>
     <Typography variant="body1">
@@ -55,7 +55,7 @@ const Html = () => {
         Guardiamo un esempio:
       </p>
     </Typography>
-    <SyntaxHighlighter language="html" style={docco}>
+    <SyntaxHighlighter language="html" style={monokai}>
       {`<html>
   <head>
     <title> Pagina di Prova </title>
@@ -87,7 +87,7 @@ const Html = () => {
     Ecco un esempio:
   </p>
 </Typography>
-<SyntaxHighlighter language="html" style={docco}>
+<SyntaxHighlighter language="html" style={monokai}>
 {`<html>
 <head>
   <title>Esempio formattazione in HTML</title>
@@ -123,7 +123,7 @@ const Html = () => {
     Possiamo inserire delle immagini utilizzando il tag <code>&lt;img&gt;</code>:
   </p>
 </Typography>
-<SyntaxHighlighter language="html" style={docco}>
+<SyntaxHighlighter language="html" style={monokai}>
 {`<img src="img_prova.jpg">`}
 </SyntaxHighlighter>
 <Typography variant="body1">
@@ -140,7 +140,7 @@ const Html = () => {
     Possiamo inserire un link ipertestuale in una pagina web con il tag <code>&lt;a href="..."&gt;</code>:
   </p>
 </Typography>
-<SyntaxHighlighter language="html" style={docco}>
+<SyntaxHighlighter language="html" style={monokai}>
 {`<a href="altrapagina.html"> Link all'altra pagina </a>`}
 </SyntaxHighlighter>
 <Typography variant="body1">
@@ -151,7 +151,7 @@ const Html = () => {
     Grazie al tag <code>&lt;a href= ...&gt;</code> possiamo creare anche un segnalibro, che ci porta direttamente ad un punto della nostra pagina web invece che in un’altra pagina. Ecco un esempio:
   </p>
 </Typography>
-<SyntaxHighlighter language="html" style={docco}>
+<SyntaxHighlighter language="html" style={monokai}>
 {`<a href="#capitolo4"> Vai al capitolo 4 </a>
 ...
 <h2 id="capitolo4">Capitolo 4</h2>`}
@@ -166,7 +166,7 @@ const Html = () => {
     Eccone un esempio:
   </p>
 </Typography>
-<SyntaxHighlighter language="html" style={docco}>
+<SyntaxHighlighter language="html" style={monokai}>
 {`<html>
 <head>
   <title>Tabella Studenti</title>
@@ -215,7 +215,7 @@ const Html = () => {
     Vediamo altri esempi comuni:
   </p>
 </Typography>
-<SyntaxHighlighter language="html" style={docco}>
+<SyntaxHighlighter language="html" style={monokai}>
 {`<html lang="it">`}
 </SyntaxHighlighter>
 <Typography variant="body1">
@@ -223,7 +223,7 @@ const Html = () => {
     Nel tag <code>html</code>, è possibile utilizzare l’attributo <code>lang</code> per definire la lingua della pagina e aiutare i motori di ricerca nell’indicizzazione delle pagine.
   </p>
 </Typography>
-<SyntaxHighlighter language="html" style={docco}>
+<SyntaxHighlighter language="html" style={monokai}>
 {`<img src="img_prova.jpg" width="500" height="600">`}
 </SyntaxHighlighter>
 <Typography variant="body1">
@@ -231,7 +231,7 @@ const Html = () => {
     Oltre all’attributo <code>src</code>, possiamo inserire come attributo i tag <code>width</code> e <code>height</code> per impostare larghezza e lunghezza dell’immagine.
   </p>
 </Typography>
-<SyntaxHighlighter language="html" style={docco}>
+<SyntaxHighlighter language="html" style={monokai}>
 {`<img src="img_prova.jpg" alt="Immagine di prova">`}
 </SyntaxHighlighter>
 <Typography variant="body1">
@@ -239,7 +239,7 @@ const Html = () => {
     L’attributo <code>alt</code> in un'immagine consente di collocare un testo alternativo, che viene utilizzato se ci sono errori nel caricamento delle immagini oppure se il visualizzatore della pagina ha uno screen reader, ad esempio.
   </p>
 </Typography>
-<SyntaxHighlighter language="html" style={docco}>
+<SyntaxHighlighter language="html" style={monokai}>
 {`<nome_tag style="proprietà:valore;">`}
 </SyntaxHighlighter>
 <Typography variant="body1">
@@ -248,7 +248,7 @@ const Html = () => {
     La proprietà e il relativo valore fanno parte del linguaggio CSS che, unito all’HTML, consente di formattare adeguatamente tutte le pagine nel nostro sito web e semplificare il lavoro.
   </p>
 </Typography>
-<SyntaxHighlighter language="html" style={docco}>
+<SyntaxHighlighter language="html" style={monokai}>
 {`<html>
   <head> </head>
   <body style="background-color:green;">
@@ -268,7 +268,7 @@ const Html = () => {
     Il CSS possiede la seguente struttura:
   </p>
 </Typography>
-<SyntaxHighlighter language="css" style={docco}>
+<SyntaxHighlighter language="css" style={monokai}>
 {`nome_tag {
     proprietà1: valore;
     proprietà2: valore;
@@ -292,7 +292,7 @@ const Html = () => {
     Utilizzando il tag <code>&lt;style&gt;</code> possiamo definire le proprietà CSS che ci interessano direttamente nella sezione <code>&lt;head&gt;</code> della nostra pagina. Questo formatterà tutti i tag definiti all’interno dello style. Ecco un esempio:
   </p>
 </Typography>
-<SyntaxHighlighter language="html" style={docco}>
+<SyntaxHighlighter language="html" style={monokai}>
 {`<html>
 <head>
   <title>Utilizzo del tag style</title>
@@ -334,7 +334,7 @@ const Html = () => {
     Allo stesso modo, è possibile incorporare un file esterno, in formato <code>.css</code>, nel documento, inserendo nell’<code>head</code> il tag <code>&lt;link&gt;</code>:
   </p>
 </Typography>
-<SyntaxHighlighter language="html" style={docco}>
+<SyntaxHighlighter language="html" style={monokai}>
 {`<link rel="stylesheet" href="nome_file_stile.css">`}
 </SyntaxHighlighter>
 <Typography variant="body1">
@@ -342,7 +342,7 @@ const Html = () => {
     Proviamo a mettere la stessa formattazione dell’esempio precedente, ma con file esterno:
   </p>
 </Typography>
-<SyntaxHighlighter language="html" style={docco}>
+<SyntaxHighlighter language="html" style={monokai}>
 {`<html>
 <head>
   <title>Utilizzo del file esterno</title>
@@ -359,7 +359,7 @@ const Html = () => {
     Pagina CSS (nella stessa directory):
   </p>
 </Typography>
-<SyntaxHighlighter language="css" style={docco}>
+<SyntaxHighlighter language="css" style={monokai}>
 {`body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
