@@ -15,6 +15,7 @@ const pages = [
               {name: 'Homepage', link: '/'},
               {name: 'Corsi', link: '/corsi'},
               {name: 'Progetti', link: '/progetti'},
+              {name: 'Contattami', link: '/contattami'},
             ];
 
 function ResponsiveAppBar() {
@@ -81,7 +82,7 @@ function ResponsiveAppBar() {
               {pages.map((page) => (
                 <MenuItem key={page.name} onClick={handleCloseNavMenu}>
                   <Typography 
-                    sx={{ textAlign: 'center' }} 
+                    sx={{ textAlign: 'center', textDecoration: 'none', }} 
                     component={Link} 
                     to={page.link}>
                     {page.name}
@@ -93,8 +94,8 @@ function ResponsiveAppBar() {
           <Typography
             variant="h5"
             noWrap
-            component="a"
-            href="#app-bar-with-responsive-menu"
+            component={Link}
+            to={'/'}
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },

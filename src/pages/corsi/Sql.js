@@ -6,7 +6,7 @@ import TableOfContents from '../../components/TableOfContents';
 import ParallaxSection from '../../components/ParallaxSection';
 
 const Sql = () => (
-  <Container maxWidth="lg">
+  <Container maxWidth="lg" sx={{pb: 4}}>
     <ParallaxSection  bgImage="/images/computercorsi.jpg" title="SQL" />
         <div style={{ padding: '5px' }}>
         </div>

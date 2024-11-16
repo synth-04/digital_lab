@@ -10,7 +10,7 @@ import { corsi } from '../data/corsi';
 
 const HomePage = () => {
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="lg" sx={{pb: 4}}>
         <ParallaxSection  bgImage="/images/computer2.jpg" title="Benvenuto!" />
         <div style={{ padding: '5px' }}>
         </div>
@@ -185,7 +185,13 @@ const HomePage = () => {
             <Typography variant="body1" sx={{ marginTop: 1 }}>
             Sono Gabriele Di Pinto, docente di Laboratorio di Scienze Informatiche. Nella vita mi occupo di digitale, innovazione e business online, oltre che di formazione per ragazzi, adulti e aziende. Ho creato il Digital Lab per fornire ai miei studenti un luogo dove studiare, esercitarsi e crescere. Insegnare non è soltanto un mestiere, ma una passione per me.
             </Typography>
-            <Button variant="contained" color="primary" sx={{ mt: 2 }}>
+            <Button 
+              variant="contained" 
+              color="primary" 
+              sx={{ mt: 2 }}
+              component={Link}
+              to={'/contattami'}
+              >
               Contattami!
             </Button>
           </Box>

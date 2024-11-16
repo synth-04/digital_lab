@@ -7,7 +7,7 @@ import ParallaxSection from '../../components/ParallaxSection';
 
 const Html = () => {
   return (
-  <Container maxWidth="lg">
+  <Container maxWidth="lg" sx={{pb: 4}}>
     <ParallaxSection  bgImage="/images/computercorsi.jpg" title="Sviluppo Web con HTML e CSS" />
         <div style={{ padding: '5px' }}>
         </div>

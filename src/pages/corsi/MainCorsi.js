@@ -10,7 +10,7 @@ import { corsi } from '../../data/corsi';
 
 const MainCorsi = () => {
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="lg" sx={{pb: 4}}>
       <ParallaxSection  bgImage="/images/computercorsi.jpg" title="Corsi" />
         <div style={{ padding: '5px' }}>
         </div>

@@ -6,7 +6,7 @@ import TableOfContents from '../../components/TableOfContents';
 import ParallaxSection from '../../components/ParallaxSection';
 
 const Architecture = () => (
-  <Container maxWidth="lg">
+  <Container maxWidth="lg" sx={{pb: 4}}>
     <ParallaxSection  bgImage="/images/computercorsi.jpg" title="Architettura del Computer" />
         <div style={{ padding: '5px' }}>
         </div>

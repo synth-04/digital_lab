@@ -7,7 +7,7 @@ const ParallaxSection = ({ bgImage, title }) => {
   return (
     <Parallax bgImage={bgImage} strength={500}
     style={{ width: '100vw', marginLeft: 'calc(50% - 50vw)' }}>
-      <div style={{ height: 400 }}>
+      <div style={{ height: 300 }}>
         <div style={{
           display: 'flex',
           justifyContent: 'center',
@@ -25,7 +25,7 @@ const ParallaxSection = ({ bgImage, title }) => {
 
 ParallaxSection.propTypes = {
     bgImage: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired, // Prop validation per assicurare che venga passato un bgImage
+    title: PropTypes.string.isRequired,
   };
 
 export default ParallaxSection;

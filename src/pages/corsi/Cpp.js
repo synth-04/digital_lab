@@ -7,7 +7,7 @@ import ParallaxSection from '../../components/ParallaxSection';
 
 const Cpp = () => {
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="lg" sx={{pb: 4}}>
       <ParallaxSection  bgImage="/images/computercorsi.jpg" title="C++" />
         <div style={{ padding: '5px' }}>
         </div>
