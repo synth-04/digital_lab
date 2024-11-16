@@ -83,6 +83,8 @@ Contributions are welcome! If you'd like to contribute, please fork the reposito
 ## Contact
 
 **Gabriele Di Pinto**  
-Email: [gabriele.dipinto@gmail.com](mailto:gabriele.dipinto@gmail.com)  
-[Your LinkedIn Profile](https://www.linkedin.com/in/gabrieledipinto/)
+Email: [gabriele.dipinto@gmail.com](mailto:gabriele.dipinto@gmail.com)
+
+[LinkedIn Profile](https://www.linkedin.com/in/gabrieledipinto/)
+
 [Project Repository](https://github.com/synth-04/digital-lab)
