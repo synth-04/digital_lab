@@ -1,4 +1,3 @@
-// src/pages/HomePage.js
 import React from 'react';
 import { Container, Typography, Button, Box, Card, CardContent, CardMedia } from '@mui/material';
 import Grid from '@mui/material/Grid2';

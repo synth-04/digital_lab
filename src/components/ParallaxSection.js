@@ -1,4 +1,3 @@
-// src/components/ParallaxSection.js
 import React from 'react';
 import { Parallax } from 'react-parallax';
 import PropTypes from 'prop-types';

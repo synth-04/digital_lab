@@ -11,9 +11,9 @@ import Cpp from './pages/corsi/Cpp';
 import Html from './pages/corsi/Html';
 import Sql from './pages/corsi/Sql';
 import Architecture from './pages/corsi/Architecture';
-// Importa altre pagine di tutorial...
+// Importa altre pagine...
 import CustomCursor from './components/CustomCursor';
-import PageTransition from './components/PageTransition'; // Assicurati che questo componente esista
+import PageTransition from './components/PageTransition';
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -28,7 +28,7 @@ function AnimatedRoutes() {
         <Route path="/corsi/web-development" element={<PageTransition><Html /></PageTransition>} />
         <Route path="/corsi/architettura-del-computer" element={<PageTransition><Architecture /></PageTransition>} />
         <Route path="/corsi/sql" element={<PageTransition><Sql /></PageTransition>} />
-        {/* Aggiungi altre rotte per ogni pagina di tutorial */}
+        {/* Aggiungi altre rotte per ogni pagina */}
       </Routes>
     </AnimatePresence>
   );
@@ -38,7 +38,7 @@ function App() {
   return (
     <Router>
       <div>
-        <CustomCursor /> {/* Custom Cursor component */}
+        <CustomCursor />
         <Navbar />
         <AnimatedRoutes />
         <Footer />
