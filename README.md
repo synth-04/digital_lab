@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# Digital Lab - Educational Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to Digital Lab, an educational platform aimed at providing high-quality resources and tutorials on programming, web development, computer architecture, and more for students and educators.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [About the Project](#about-the-project)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Setup and Installation](#setup-and-installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Contact](#contact)
 
-### `npm start`
+## About the Project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The **Digital Lab** is designed to enhance and support the learning journey of students in secondary schools. The platform offers comprehensive guides, tutorials, exercises, and projects in various fields of computer science. This resource serves as a bridge to help students deepen their understanding and apply their knowledge practically.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+- **Frontend**: React, React Router, Material-UI, Framer Motion
+- **Hosting**: Vercel
+- **Email Service**: EmailJS (for contact forms)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `npm run build`
+- **Responsive Design**: Fully responsive design to ensure a seamless experience across devices, including mobile, tablet, and desktop.
+- **Courses and Tutorials**: Comprehensive courses on C++, SQL, HTML, and more with detailed explanations, code examples, and interactive learning.
+- **Custom Animations**: Engaging animations using Framer Motion for page transitions and a custom cursor.
+- **Contact Form**: Direct communication with the developer via a contact form using EmailJS integration.
+- **Navigation**: User-friendly navigation through a responsive Navbar.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Setup and Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Make sure you have the following installed:
 
-### `npm run eject`
+- [Node.js](https://nodejs.org/) (LTS version recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/digital-lab.git
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Navigate the project directory
+    ```bash
+    cd digital-lab
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Install dependencies
+    ```bash
+    npm install
+    # or
+    yarn install
 
-## Learn More
+4. Start the development server
+    ```bash
+    npm start
+    # or
+    yarn start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Usage
+- Homepage: Displays an overview of the available tutorials and resources.
+- Courses: Navigate through the various tutorials and educational content.
+- Contact: Reach out using the integrated contact form.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Deployment
 
-### Code Splitting
+The project is deployed using [Vercel](https://vercel.com/). To deploy your changes, push the code to the main branch (or your designated deployment branch).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contributing
 
-### Analyzing the Bundle Size
+Contributions are welcome! If you'd like to contribute, please fork the repository and create a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-### Making a Progressive Web App
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Gabriele Di Pinto**  
+Email: [gabriele.dipinto@gmail.com](mailto:gabriele.dipinto@gmail.com)  
+[Your LinkedIn Profile](https://www.linkedin.com/in/gabrieledipinto/)
+[Project Repository](https://github.com/synth-04/digital-lab)
