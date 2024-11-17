@@ -14,7 +14,6 @@ import Architecture from './pages/corsi/Architecture';
 // Importa altre pagine...
 import CustomCursor from './components/CustomCursor';
 import PageTransition from './components/PageTransition';
-import { SpeedInsights } from "@vercel/speed-insights/next";
 
 
 function AnimatedRoutes() {
@@ -44,7 +43,6 @@ function App() {
         <Navbar />
         <AnimatedRoutes />
         <Footer />
-        <SpeedInsights />
       </div>
     </Router>
     
